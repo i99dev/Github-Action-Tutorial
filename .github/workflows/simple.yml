@@ -28,4 +28,20 @@ jobs:
         run: |
           import platform
           print(platform.processor())
-        shell: python
+        shell: python # use shell to run under specific shell ex: bash, zsh, fish, ...
+
+  run-shell-command-2:
+    runs-on: windows-latest
+    needs: # use needs to run before other job
+      - run-shell-command
+    steps:
+      - name: get dircetory list
+        run: dir
+      - name: multiple commands
+        run: | # use pipe to run multiple commands
+          node -v
+          npm -v
+      - name: get-dircetory-list
+        run: |
+          ls -la
+        shell: bash # use shell to run under specific shell ex: bash, zsh, fish, ...
