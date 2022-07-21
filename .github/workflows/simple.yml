@@ -28,4 +28,4 @@ jobs:
         run: |
           import sys
           print(platform.processor())
-        shell: python3
+        shell: python
