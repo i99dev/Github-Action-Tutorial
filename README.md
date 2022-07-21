@@ -65,9 +65,12 @@ My strategy learing is:
     - runing action under condition.
     - `tags` and `branches` can be used to filter the action.
     - `paths` use for directory.
-- [x] Environment Variables, Secrets, and encrypted & discrypted file.
-- [ ] Strategies, Actions, and Jobs.
-- [ ] createing a CI/CD workflow.
+- [x] Environment Variables, Secrets, and encrypted & discrypted file. ✅
+- [x] Strategies, Actions, and Jobs. ✅
+  - [x] run action in parallel.
+  - [x] run action difference version of os and package.
+  - [x] use container.
+- [x] createing a CI/CD workflow. ✅
 - [ ] createing Our Own Github Actions.
 
 # Resources
