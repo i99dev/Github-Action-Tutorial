@@ -62,6 +62,9 @@ My strategy learing is:
   
   You can check file [.github/workflows/actions.yml](.github/workflows/actions.yml) for more information.
     - How use on more advanced like type or specific branch.
+    - runing action under condition.
+    - `tags` and `branches` can be used to filter the action.
+    - `paths` use for directory.
 - [ ] Environment Variables, Secrets, and Secrets Files.
 - [ ] Strategies, Actions, and Jobs.
 - [ ] createing a CI/CD workflow.
