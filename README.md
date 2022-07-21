@@ -14,7 +14,50 @@ My strategy learing is:
 - pull request review automation.
   
 ## Path to the Repository
-- [x] [introduction](.github/workflows/simple.yml)
+- [x] [introduction](.github/workflows/simple.yml) 1.5 hours to complete ✅.
+  - [x] define the workflow.
+    ```yml
+    name: simple
+    ```
+  - [x] define Events to trigger the workflow.
+    ```yml
+        on:
+            push:
+            branches:
+                - master
+            tags:
+                - v1.0.0
+        ```
+        or 
+        ```yml
+            on: [push]
+        ```
+
+  - [x] define the sub-workflow under `jobs`
+    ```yml
+    jobs:
+        build-projects:
+    ```
+  - [x] select system to use. by `runs-on` attribute.
+    ```yml
+    jobs:
+        build-projects:
+        runs-on: ubuntu-latest
+    ```
+  - [x] define the steps in the workflow and why we need use |.
+    ```yml
+    jobs:
+        build-projects:
+        runs-on: ubuntu-latest
+        steps:
+        - name: echo string
+        run: | # use pip for multiple lines.
+            echo "Hello World 1"
+            echo "Hello World 2"
+    ```
+  - [x] how use needs attribute and when.
+  - [x] how we can use `uses`  attribute to use other actions.
+  - [x] pass paramters to actions we are use by use `with`.
 - [ ] Events, Schedules, External Events & Filters that can be used in a workflow.
 - [ ] Environment Variables, Secrets, and Secrets Files.
 - [ ] Strategies, Actions, and Jobs.
