@@ -1,7 +1,21 @@
 
 name: use action to run shell command
 
-on: [push]
+on: 
+  repository_dispatch: # use thrugh repository_dispatch
+    branches:
+      - master
+      - "feat/*" # match feat/<name>
+      - "fix/**" # match fix/<name>/one
+  schedule:
+    - cron: "0 0 * * *" # every day at midnight
+  push:
+    branches: [master]
+    paths:
+      - "**.js" # match all js files
+      - "!**.ts" # match all js files except ts files
+  pull_request:
+    types: [opened, reopened, synchronize]
 
 jobs:
   run-shell-uses:
