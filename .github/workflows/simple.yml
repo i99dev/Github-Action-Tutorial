@@ -16,7 +16,19 @@ jobs:
       - name: echo string
         run: echo "Hello World"
       - name: multiple commands
-        run: |
+        run: | # use pipe to run multiple commands
           node -v
           npm -v
           echo "Hello World"
+      - name: run python script example 1
+        run: |
+          #!/usr/bin/env python3
+          import sys
+          print("Hello World")
+          sys.exit(0)
+      - name: run python script example 2
+        run: |
+          import sys
+          print("Hello World")
+          sys.exit(1)
+        shell: python3
