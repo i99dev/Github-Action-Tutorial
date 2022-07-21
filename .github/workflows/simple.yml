@@ -1,0 +1,22 @@
+# name -> use for unieq name of workflow
+name: shell workflow
+
+# on -> run workflow on specific event, now i select push event for all brnaches
+on: [push]
+
+# if want for specific branch, use
+# on: [push]
+# branches:
+# - master
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo string
+        run: echo "Hello World"
+      - name: multiple commands
+        run: |
+          - echo "Hello World"
+          - echo "Hello World"
+          - echo "Hello World"
