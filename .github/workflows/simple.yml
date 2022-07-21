@@ -23,12 +23,10 @@ jobs:
       - name: run python script example 1
         run: |
           #!/usr/bin/env python3
-          import sys
-          print("Hello World")
-          sys.exit(0)
+          import platform
+          print(platform.processor())
       - name: run python script example 2
         run: |
           import sys
-          print("Hello World")
-          sys.exit(1)
+          print(platform.processor())
         shell: python3
