@@ -15,4 +15,4 @@ jobs:
           color: "red"
      - name: multiple commands
        run: | # use pipe to run multiple commands
-         echo {{steps.echo-string.output.time}}
+         echo "${{steps.echo-string.outputs.time}}"
