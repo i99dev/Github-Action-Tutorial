@@ -17,6 +17,6 @@ jobs:
         run: echo "Hello World"
       - name: multiple commands
         run: |
-          - echo "Hello World"
-          - echo "Hello World"
-          - echo "Hello World"
+          node -v
+          npm -v
+          echo "Hello World"
