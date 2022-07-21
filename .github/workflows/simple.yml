@@ -22,8 +22,8 @@ jobs:
           echo "Hello World"
       - name: install python3
         run: |
-          apt-get update
-          apt-get install python3
+          sudo apt-get update
+          sudo apt-get install python3
       - name: run python script example 1
         run: |
           #!/usr/bin/env python3
