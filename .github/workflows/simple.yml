@@ -20,6 +20,10 @@ jobs:
           node -v
           npm -v
           echo "Hello World"
+      - name: install python3
+        run: |
+          apt-get update
+          apt-get install python3
       - name: run python script example 1
         run: |
           #!/usr/bin/env python3
