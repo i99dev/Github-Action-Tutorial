@@ -24,12 +24,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install python3
-      - name: run python script example 1
-        run: |
-          #!/usr/bin/env python3
-          import platform
-          print(platform.processor())
-      - name: run python script example 2
+      - name: run python script
         run: |
           import sys
           print(platform.processor())
