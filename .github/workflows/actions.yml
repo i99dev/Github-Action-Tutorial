@@ -1,7 +1,11 @@
 
 name: use action to run shell command
 
-on: [push]
+on: 
+  push:
+    branches: [master]
+  pull_request:
+    types: [opened, reopened, synchronize]
 
 jobs:
   run-shell-uses:

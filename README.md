@@ -59,6 +59,9 @@ My strategy learing is:
   - [x] how we can use `uses`  attribute to use other actions.
   - [x] pass paramters to actions we are use by use `with`.
 - [ ] Events, Schedules, External Events & Filters that can be used in a workflow.
+  
+  You can check file [.github/workflows/actions.yml](.github/workflows/actions.yml) for more information.
+    - How use on more advanced like type or specific branch.
 - [ ] Environment Variables, Secrets, and Secrets Files.
 - [ ] Strategies, Actions, and Jobs.
 - [ ] createing a CI/CD workflow.
