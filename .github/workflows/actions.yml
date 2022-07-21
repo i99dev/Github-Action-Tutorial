@@ -9,10 +9,10 @@ jobs:
    steps:
      - name: echo string
        id: echo-string
-       uses: actions/echo@v1 # use uses to run action from any repository
+       uses: actions/hello-world-javascript-action@v1.1 # use uses to run action from any repository
        with: # use with to pass parameter to action
-          message: "Hello World"
+          who-to-greet: "i99dev"
           color: "red"
      - name: multiple commands
        run: | # use pipe to run multiple commands
-         echo {{steps.echo-string.output.message}}
+         echo {{steps.echo-string.output.time}}
