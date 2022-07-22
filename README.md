@@ -27,11 +27,13 @@ My strategy learing is:
                 - master
             tags:
                 - v1.0.0
-        ```
-        or 
-        ```yml
-            on: [push]
-        ```
+    ```
+
+    or
+     
+    ```yml
+        on: [push]
+    ```
 
   - [x] define the sub-workflow under `jobs`
     ```yml
@@ -71,7 +73,7 @@ My strategy learing is:
   - [x] run action difference version of os and package.
   - [x] use container.
 - [x] createing a CI/CD workflow. ✅
-- [ ] createing Our Own Github Actions.
+- [x] createing Our Own Github Actions.
 
 # Resources
 - [x] [udemy](https://www.udemy.com/course/github-actions/)
